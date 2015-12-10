@@ -12,11 +12,11 @@ NDock is a server application container, which can be used for your back end ser
 * NDock.Worker.exe:		NDock worker. If NDock's isolation mode is Process, NDock worker will work as carrier process for NDock App.
 
 
-### Basic Configuration
+## Basic Configuration
 
 The xml file below is a full NDock configuration sample:
 
-	*	NDock.Server.exe.config
+NDock.Server.exe.config	
 	
 	<?xml version="1.0" encoding="utf-8" ?>
 	<configuration>
@@ -36,12 +36,12 @@ The xml file below is a full NDock configuration sample:
 	</configuration>
 	
 
-#### The attribute value of "ServiceName" in the appSettings section defines the windows service name if the NDock server runs as Windows Service:
+### The attribute value of "ServiceName" in the appSettings section defines the windows service name if the NDock server runs as Windows Service:
 
 	<add key="ServiceName" value="NDockService"/>
 
 	
-#### The configuration below means the NDock server has one NDock app defined whose name is "TestApp" and it's type name is "TestAppServer":
+### The configuration below means the NDock server has one NDock app defined whose name is "TestApp" and it's type name is "TestAppServer":
 
 	<servers>
 	  <server name="TestApp"
