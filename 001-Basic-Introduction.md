@@ -12,7 +12,7 @@ NDock 是一个服务器应用容器, 他能用宿主和管理你的多个后端
 * NDock.Worker.exe:		NDock worker. 如果NDock以Process的隔离模式运行, NDock worker 将会以载体进程的形式运行你的 NDock App.
 
 
-### 基本介绍
+## 基本配置
 
 下面的xml文件是一个完整的NDock配置示例:
 
