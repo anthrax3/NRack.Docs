@@ -1,11 +1,9 @@
 # Create Your NDock App
-=======================
 
 > __Keywords__: NDock, NDock App, AppServer
 
 
 ## Get NDock
-=======================
 
 The latest version of NDock is available as the [NDock NuGet package](https://www.nuget.org/packages/NDock/). If you are not familiar with the NuGet Package Manager, we encourage you to read the [NuGet Overview](http://docs.nuget.org/consume/overview).
 
@@ -23,7 +21,6 @@ Alternatively, you can install NDock by running the following command in the [Pa
 
 
 ## Create Your NDock AppServer
-==============================================
 
 Define a class base on the NDock AppServer base class, and implement some required methods.
 And add an attribute AppServerMetadata with its identiry name. The identity name will be used in NDock configuration.
@@ -53,7 +50,6 @@ And add an attribute AppServerMetadata with its identiry name. The identity name
 	
 	
 ## More Methods can be Overrided of NDock AppServer
-=====================================================================
 
 Setup method for initializing code
 
@@ -99,7 +95,7 @@ CanBeRecycled method to return whether the app can be recycled now
 
 
 ## Enable Logging in NDock
-==========================
+
 NDock uses AnyLog to achieve a simple log abstraction to allow you to select a specific logging implementation at runtime.
 
 ### Enable log4net
@@ -113,6 +109,5 @@ NDock uses AnyLog to achieve a simple log abstraction to allow you to select a s
 	2. Put the NLog configuration file "nlog.config" in the sub directory "Config" of the application root.
 
 ## Deployment and Configuration
-===============================
 
 
