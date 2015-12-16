@@ -1,4 +1,5 @@
 # NDock Basic Introduction
+==========================
 
 > __Keywords__: NDock, Introduction
 
@@ -6,6 +7,7 @@ NDock is a server application container, which can be used for your back end ser
 
 
 ## Assemblies Introduction
+==========================
 
 * NDock.Base.dll： 		NDock basic common assembly, which is referenced by NDock container server and NDock application (NDock App);
 * NDock.Server.exe: 	NDock container server. It can run as windows service or console application;
@@ -13,6 +15,7 @@ NDock is a server application container, which can be used for your back end ser
 
 
 ## Define Your NDock App
+==========================
 
 Define a class base on the NDock AppServer base class, and implement some required methods.
 And add an attribute AppServerMetadata with its identiry name. The identity name will be used in NDock configuration.
@@ -40,6 +43,7 @@ And add an attribute AppServerMetadata with its identiry name. The identity name
 
 
 ## Basic Configuration
+==========================
 
 The xml file below is a full NDock configuration sample:
 
@@ -78,6 +82,7 @@ NDock.Server.exe.config
 	
 	
 ## Start NDock
+==========================
 
 The entry executable file is "NDock.Server.exe". You can double click it to run and then you will be asked for whether you want to run it directly or install it as Windows Service.
 
