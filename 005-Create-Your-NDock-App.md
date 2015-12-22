@@ -94,20 +94,45 @@ CanBeRecycled method to return whether the app can be recycled now
         }
 
 
-## Enable Logging in NDock
-
-NDock uses AnyLog to achieve a simple log abstraction to allow you to select a specific logging implementation at runtime.
-
-### Enable log4net
-
-	1. Install AnyLog.Log4Net through NuGet;
-	2. Put the log4net configuration file "log4net.config" in the sub directory "Config" of the application root.
-
-### Enable NLog
-
-	1. Install AnyLog.NLog through NuGet;
-	2. Put the NLog configuration file "nlog.config" in the sub directory "Config" of the application root.
-
 ## Deployment and Configuration
 
+### Directory Structure
 
+No matter how you build your projects and how to copy output assemblies, you need make sure the NDock is deployed in the below directory structure:
+
+	D:> NDock
+			- AppRoot
+				- TestAppServer
+					- NDock.Examples.TestApp.dll
+			- Config
+				- log4net.config
+			- AnyLog.dll
+			- AnyLog.Log4Net.dll
+			- log4net.dll
+			- NDock.Base.dll
+			- NDock.Server.exe
+			- NDock.Server.exe.config
+			- NDock.Worker.exe
+			- ndock.cmd
+			- ndock.sh
+
+
+
+### Configuration
+
+	<?xml version="1.0" encoding="utf-8" ?>
+	<configuration>
+	  <configSections>
+		<section name="ndock" type="NDock.Base.Configuration.NDockConfigSection, NDock.Base"/>
+	  </configSections>
+	  <appSettings>
+		<add key="ServiceName" value="NDockService"/>
+	  </appSettings>
+	  <ndock>
+		<servers>
+		  <server name="TestApp"
+				  type="TestAppServer">
+		  </server>
+		</servers>
+	  </ndock>
+	</configuration>
