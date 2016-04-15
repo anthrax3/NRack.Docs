@@ -123,16 +123,16 @@ No matter how you build your projects and how to copy output assemblies, you nee
 	<?xml version="1.0" encoding="utf-8" ?>
 	<configuration>
 	  <configSections>
-		<section name="NRack" type="NRack.Base.Configuration.NRackConfigSection, NRack.Base"/>
+		<section name="nrack" type="NRack.Base.Configuration.NRackConfigSection, NRack.Base"/>
 	  </configSections>
 	  <appSettings>
 		<add key="ServiceName" value="NRackService"/>
 	  </appSettings>
-	  <NRack>
+	  <nrack>
 		<servers>
 		  <server name="TestApp"
 				  type="TestAppServer">
 		  </server>
 		</servers>
-	  </NRack>
+	  </nrack>
 	</configuration>
