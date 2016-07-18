@@ -1,3 +1,3 @@
-NDock 0.1 文档
+NRack 0.1 文档
 ===========================================================
-[http://ndock.getdocs.net/v0-1/en-US/](http://ndock.getdocs.net/v0-1/en-US/)
+[http://nrack.getdocs.net/v0-1/zh-CN/](http://nrack.getdocs.net/v0-1/zh-CN/)
