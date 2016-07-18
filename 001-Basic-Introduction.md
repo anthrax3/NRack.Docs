@@ -24,19 +24,19 @@ NRack 是一个服务器应用容器, 他能用宿主和管理你的多个后端
 	using NRack.Base.Metadata;
 	
 	[AppServerMetadata("TestAppServer")]
-  public class TestAppServer : AppServer
+	public class TestAppServer : AppServer
   {
-			public override bool Start()
-			{            
-		// the start code	
-					return true;
-			}
+		public override bool Start()
+		{            
+				// the start code	
+				return true;
+		}
 
-			public override void Stop()
-			{
-		// the stop code	
-			}
-	}
+		public override void Stop()
+		{
+				// the stop code	
+		}
+}
 
 
 ## 基本配置
